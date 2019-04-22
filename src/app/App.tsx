@@ -4,6 +4,7 @@ import { AppContext } from "../context";
 import { EPaths } from "../config";
 import { Main } from "../pages/main";
 import DevTools from "mobx-react-devtools";
+import { Login } from "../pages/login/Login";
 
 export class App extends React.Component {
   render() {
@@ -13,6 +14,7 @@ export class App extends React.Component {
                 <DevTools />
                 <Switch>
                     <Route exact={true} path={EPaths.MAIN} component={Main} />
+                    <Route exact={true} path={EPaths.LOGIN} component={Login} />
                 </Switch>
             </>
         </Router>
