@@ -3,7 +3,8 @@ import { EColors } from "../../../config";
 
 export const styles = createStyles({
    menu: {
-        width: "100%"
+        width: "100%",
+       marginBottom: 30
    },
     menuItem: {
         cursor: "pointer"

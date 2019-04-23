@@ -17,12 +17,12 @@ export const Avatar = withStyles(styles)(
             return (
                 <div className={cn(this.props.classes.avatar, this.props.className)}>
                     <img
-                        src={this.getAvatarLink(this.props.src)}
-                        alt={this.props.name}
+                        src={this.getAvatarLink(this.props.user.imageUrl)}
+                        alt={this.props.user.name}
                         className={this.props.classes.avatarImage}
                         onError={onAvatarError}
                     />
-                    <span className={this.props.classes.name}>{this.props.name}</span>
+                    <span className={this.props.classes.name}>{this.props.user.name}</span>
                 </div>
             );
         }

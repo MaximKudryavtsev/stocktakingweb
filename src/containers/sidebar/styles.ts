@@ -14,5 +14,12 @@ export const styles = createStyles({
    },
     sidebarItem: {
        marginBottom: 10
+    },
+    logoutButton: {
+        width: "100%",
+        display: "flex",
+        justifyContent: "flex-start",
+        padding: "0 10px",
+        boxSizing: "border-box"
     }
 });

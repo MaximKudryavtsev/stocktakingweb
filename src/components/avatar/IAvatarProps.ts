@@ -1,8 +1,8 @@
 import { WithStyles } from "@material-ui/core";
 import { styles } from "./styles";
+import { IUser } from "../../interfaces";
 
 export interface IAvatarProps extends WithStyles<typeof styles> {
-    src?: string;
-    name: string;
+    user: IUser;
     className?: string;
 }
